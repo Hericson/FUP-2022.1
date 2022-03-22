@@ -25,3 +25,4 @@ print("O circuito de", nome_circuito,
      "precisa de", numero_voltas,
      "voltas para completar",
      round(extensao_corrida, 2), "Km")
+
