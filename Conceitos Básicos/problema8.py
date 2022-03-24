@@ -14,5 +14,5 @@ valor_aumento = salario_original * (aumento_percentual / 100)
 
 salario_atualizado = salario_original + valor_aumento
 
-print("O aumento será de R$", valor_aumento)
-print("O novo salário será: R$", salario_atualizado)
+print("O aumento será de R$", round(valor_aumento, 2))
+print("O novo salário será: R$", round(salario_atualizado,2))
