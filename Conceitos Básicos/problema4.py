@@ -9,3 +9,32 @@
 # • comprar apenas galões de 3,6 litros;
 
 # • misturar latas e galões, de forma que o preço seja o menor. Acrescente 10% de folga e sempre arredonde os valores para cima, isto é, considere latas cheias.
+
+nome_local = input("Qual o nome do local a ser pintado? ")
+area = float(input("Qual a área a ser pintada (em m2)? "))
+
+cobertura_por_litro = 3
+volume_lata = 18
+preco_lata = 80
+volume_galao = 3.6
+preco_galao = 25
+
+quantidade_de_litros = 1.1 * (area / cobertura_por_litro)
+
+quantidade_somente_latas = int(math.ceil(quantidade_de_litros / volume_lata))
+preco_total_somente_latas = quantidade_somente_latas * preco_lata
+
+quantidade_somente_galoes = int(math.ceil(quantidade_de_litros / volume_galao))
+preco_total_somente_galoes = preco_galao * quantidade_somente_galões
+
+quantidade_latas = int(quantidade_de_litros // volume_lata)
+litros_restantes = quantidade_de_litros - (quantidade_latas * volume_lata)
+
+quantidade_galoes = math.ceil(litros_restantes / volume_galao)
+
+preco_total = quantidade_latas * preco_lata + quantidade_galoes * preco_galao
+
+print(f"Para pintar o local {nome_local} será necessário:\n"
+      f"-> {quantidade_somente_latas} lata(s) ao custo de R${preco_total_somente_latas:.02f}; ou\n"
+      f"-> {quantidade_somente_galoes} galão(ões) ao custo de R${preco_total_somente_galoes:.02f}; ou\n"
+      f"-> {quantidade_latas} lata(s) e {quantidade_galoes} galão(ões) ao custo de R${preco_total:.02f}.")

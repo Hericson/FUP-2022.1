@@ -13,16 +13,21 @@
 # = Salário Liquido: R$
 
 valor_hora = float(input("Quanto você ganha por hora? R$"))
-horas_trabalhadas = float(input("Quantas horas você trabalha no mês? "))
+
+horas_trabalhadas = float(input("Quantas horas você trabalha no mês?"))
 
 salario_bruto = valor_hora * horas_trabalhadas
+
 imposto_renda = salario_bruto * 0.11
+
 inss = salario_bruto * 0.08
+
 sindicato = salario_bruto * 0.05
+
 salario_liquido = salario_bruto - imposto_renda - inss - sindicato
 
 print("+ Salário Bruto: R$", salario_bruto)
 print("- IR: R$", imposto_renda)
 print("- INSS: R$", inss)
-print("-Sindicato: R$", sindicato)
+print("- Sindicato: R%", sindicato)
 print("= Salário Líquido: R$", salario_liquido)

@@ -9,3 +9,10 @@
 # c) a raiz quadrada do número digitado
 
 # d) a raiz cúbica do número digitado
+
+x = int(input("Digite um número inteiro positivo: "))
+
+print(x, "ao quadrado =", x**2)
+print(x, "ao cubo =", x**3)
+print("Raiz quadrada de ", x , " = ", x ** (1/2))
+print("Raiz cúbica de ", x, " = ", x ** (1/3))
