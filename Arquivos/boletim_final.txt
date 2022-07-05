@@ -1,0 +1,7 @@
+Mary:	Nota1 = 9.0	Nota2 = 8.5	Média = 8.8	Situação = Aprovado
+Peter:	Nota1 = 7.5	Nota2 = 6.8	Média = 7.2	Situação = Aprovado
+Mark:	Nota1 = 6.3	Nota2 = 6.5	Média = 6.4	Situação = Reprovado
+John:	Nota1 = 8.0	Nota2 = 9.0	Média = 8.5	Situação = Aprovado
+Paul:	Nota1 = 10.0	Nota2 = 9.0	Média = 9.5	Situação = Aprovado
+Ringo:	Nota1 = 7.4	Nota2 = 10.0	Média = 8.7	Situação = Aprovado
+George:	Nota1 = 6.0	Nota2 = 8.0	Média = 7.0	Situação = Aprovado

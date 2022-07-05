@@ -4,16 +4,12 @@ tabela = [{'times':['Brasil','Itália'],   'faltas':[10, 9]},
 
 times = {}
 
-
 def atualiza_time(times, time, faltas):
     if time in times:
         times[time] += faltas
     else:
         times[time] = faltas
-    return times
 
-
-# partida = {'times':['Brasil','Itália'],   'faltas':[10, 9]},
 for partida in tabela:
     for i in range(len(partida['times'])):
         atualiza_time(times, partida['times'][i], partida['faltas'][i])
@@ -33,3 +29,8 @@ for time, faltas in times.items():
 print(f'Total de faltas no campeonato: {total_faltas}')
 print(f"time(s) que mais fez faltas: {', '.join(times_mais_faltas)} ({mais_faltas} faltas)")
 print(f"time(s) que menos fez faltas: {', '.join(times_menos_faltas)} ({menos_faltas} faltas)")
+
+
+
+
+
